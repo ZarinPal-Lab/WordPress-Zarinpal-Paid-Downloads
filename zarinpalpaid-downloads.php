@@ -1528,11 +1528,9 @@ class zarinpalpaiddownloads_class {
 				//Redirect to URL You can do it also by creating a form
 				if ($result->Status == 100) {
 					//Header('Location: https://www.zarinpal.com/pg/StartPay/'.$result->Authority);
-					echo '<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>
-						<script>
-						Zarinak.setAuthority( ' . $result->Authority . ');
-						Zarinak.open();
-						</script>';
+                    $redirect_page = 'https://www.zarinpal.com/pg/StartPay/' .$result->Authority . '/ZarinGate';
+                    echo "<script type='text/javascript'>window.onload = function () { top.location.href = '" . $redirect_page . "'; };</script>";
+                    exit;
 				} else {
 					echo'ERR: '.$result->Status;
 				}
