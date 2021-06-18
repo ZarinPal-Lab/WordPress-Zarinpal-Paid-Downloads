@@ -3,7 +3,7 @@ Contributors: Amini7
 Donate link: http://zarinp.al/1037
 Tags: zarinpal , زرین پال
 Requires at least: 3.0.1
-Tested up to: 4.5
+Tested up to: 5.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,7 +42,8 @@ http://yoursite.com/wp-admin/plugin-install.php?tab=upload
 
 = 1.0 =
 *First release
-
+= 2.3 =
+improve performance
 
 
 

@@ -3,13 +3,13 @@
 Plugin Name:دانلود به ازای پرداخت زرین‌پال
 Plugin URI: https://www.zarinpal.com/
 Description: اين افزونه امکان فروش فايل را از طريق درگاه پرداخت زرین‌پال براي شما فراهم مي نمايد .
-Version: 2.2
+Version: 2.3
 Author: Masoud Amini
 Author URI: http://www.masoudamini.ir
 */
 define('PD_RECORDS_PER_PAGE', '20');
 define('PD_VERSION', 2.0);
-wp_enqueue_script("jquery");
+wp_enqueue_script('jquery');
 register_activation_hook(__FILE__, array("zarinpalpaiddownloads_class", "install"));
 
 class zarinpalpaiddownloads_class {
